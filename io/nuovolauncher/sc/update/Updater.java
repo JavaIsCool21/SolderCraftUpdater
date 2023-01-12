@@ -53,7 +53,7 @@ public StringBuffer getUpdateURL() {
     }
     in.close();
   
-    return response
+    return response;
 }
   
   
