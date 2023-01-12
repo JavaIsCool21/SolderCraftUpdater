@@ -36,9 +36,11 @@ public class Updater {
       http.connect();
       try(OutputStream os = http.getOutputStream()) {
         os.write(out);
-    }
-    
-    //Now retrieve the proper version
+     }
+}
+  
+public StringBuffer getUpdateURL() {
+     //Now retrieve the proper version
     URL updateURL = new URL("nuovolauncher.io/soldercraft/getupdateurl");
     HttpURLConnection updateConnection = (HttpURLConnection) update_url.openConnection();
     updateConnection.setRequestMethod("GET");
@@ -50,9 +52,9 @@ public class Updater {
       response.append(inputLine);
     }
     in.close();
-    
-}
   
+    return response
+}
   
   
   
