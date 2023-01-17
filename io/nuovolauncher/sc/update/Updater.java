@@ -37,7 +37,11 @@ public class Updater {
       http.connect();
       try(OutputStream os = http.getOutputStream()) {
         os.write(out);
-     }
+     } catch(Exception) {
+        System.out.println("An exception occured uploading the file");
+        continue;
+     } finally {
+         System.out.println("Successfully uploaded file");
 }
   
 public StringBuffer getUpdateURL() {
