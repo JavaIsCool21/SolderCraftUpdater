@@ -9,8 +9,9 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.net.HttpURLConnection;
 
-import java.lang.StandardCharsets;
 import java.lang.StringBuffer;
+
+import java.nio.charset.StandardCharsets;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
