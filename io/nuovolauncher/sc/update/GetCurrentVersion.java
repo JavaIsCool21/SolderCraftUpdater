@@ -1,9 +1,5 @@
 import java.io.File;
 
-import com.google.gson.GsonBuilder;
-
-import io.nuovolauncher.sc.update.CurrentVersionConfig;
-
 public class GetCurrentVersion {
   public static String getFName() {
     File f = new File(System.getProperty("user.home") + "/.minecraft/mods/SolderCraft-*-*.jar"));
