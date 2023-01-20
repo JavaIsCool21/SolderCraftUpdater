@@ -45,7 +45,7 @@ public class Updater {
 }
   
 public StringBuffer getUpdateURL() {
-     //Now retrieve the proper version
+     //Now retrieve the version URL
     URL updateURL = new URL("nuovolauncher.io/soldercraft/getupdateurl");
     HttpURLConnection updateConnection = (HttpURLConnection) update_url.openConnection();
     updateConnection.setRequestMethod("GET");
@@ -60,6 +60,11 @@ public StringBuffer getUpdateURL() {
   
     return response;
 }
+    
+public void downloadUpdate() {
+  // Now retrieve the proper version
+  String url = (String) getUpdateURL();
+  
   
   
   
